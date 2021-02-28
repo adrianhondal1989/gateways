@@ -4,6 +4,8 @@ import { serviceGetAllGateways, serviceDeleteGateway } from '../../api/gateways'
 import '../../assets/gateways.css';
 
 import {
+  AppBar,
+  Toolbar,
   Paper,
   Table,
   TableBody,
@@ -172,10 +174,19 @@ const Gateways = (props) => {
 
   return (
     <div className="container-fluid">
-      <div className="row row-margin d-flex justify-content-center">
-        <p>Hola Yai, mi luna linda!!</p>
-      </div>
-      <div className="row row-margin">
+      <AppBar className="appBar">
+        <Toolbar>
+          <Typography variant="h6" className="title">
+            Gateways
+          </Typography>
+        </Toolbar>
+      </AppBar>
+      {/* <div className="row row-margin d-flex justify-content-center p-4">
+        <Typography color="primary" variant="h3" gutterBottom>
+          Gateways
+        </Typography>
+      </div> */}
+      <div className="row row-margin root-main-view px-4">
         <TableContainer className="container row-padding" component={Paper}>
           {(!loadingGateways) ? (
             <div>
@@ -353,7 +364,7 @@ const Gateways = (props) => {
         setGateway={setCurrentGateway}
         onFinish={onFinishSaveGateway}
       />
-      <GatewayDetailsDialog 
+      <GatewayDetailsDialog
         open={openGatewayDetailsDialog}
         handleClose={handleCloseGatewayDetailsDialog}
         gateway={currentGateway}

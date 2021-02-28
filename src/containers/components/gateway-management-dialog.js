@@ -255,7 +255,7 @@ const GatewayManagementDialog = (props) => {
       <div className="root-dialog px-2">
         <Grid container spacing={2}>
           <Grid item xs={12} sm={6}>
-            <Paper>
+            {/* <Paper className="pb-3"> */}
               <div className="paper-header-dialog">
                 <Typography variant="h6" gutterBottom>
                   Gateway
@@ -328,10 +328,10 @@ const GatewayManagementDialog = (props) => {
                   ) : null}
                 </div>
               </div>
-            </Paper>
+            {/* </Paper> */}
           </Grid>
           <Grid item xs={12} sm={6}>
-            <Paper>
+            {/* <Paper className="pb-3"> */}
               <div className="paper-header-dialog">
                 <Typography variant="h6" gutterBottom>
                   Devices
@@ -487,7 +487,7 @@ const GatewayManagementDialog = (props) => {
                   }
                 </div>
               </div>
-            </Paper>
+            {/* </Paper> */}
           </Grid>
         </Grid>
       </div>

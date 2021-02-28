@@ -2,6 +2,11 @@
   width: 80%
 }
 
+.root-main-view {
+  flex: 1;
+  padding-top: 100px;
+}
+
 .row-margin {
   margin-right: 0px !important;
   margin-left: 0px !important;
